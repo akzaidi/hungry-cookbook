@@ -7,8 +7,8 @@ trigger:
 - master
 
 container:
-  image: myprivate.azurecr.io/cookbook:latest
-  endpoint: azacr
+  image: hungrycook.azurecr.io/cookbook:latest
+  endpoint: hungrycook
 
 steps:
 - script: make all
