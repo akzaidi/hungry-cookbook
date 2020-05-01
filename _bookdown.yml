@@ -1,0 +1,7 @@
+book_filename: "Cookbook"
+chapter_name: "Recipe "
+repo: https://github.com/akzaidi/az-recipes
+output_dir: docs
+clean: [packages.bib, bookdown.bbl]
+new_session: yes
+delete_merged_file: yes

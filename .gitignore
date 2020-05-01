@@ -1,0 +1,52 @@
+# data directories
+data/
+etc/
+
+# os files
+.DS_Store
+
+# User R files
+*.Rproj
+.Rproj.user/
+*.Rhistory
+*.rds
+
+# User python files and cache
+__pycache__
+*.egg-info/
+.ipynb_checkpoints/
+
+# Session log files
+ilogs/*
+logs/*
+
+# User vscode config
+.vscode/
+.vs
+*.code-workspace
+
+# Vim files
+*.sw[l-p]
+
+# User brains
+.brains
+*.bproj
+
+# Python intermediate files
+*.pyc
+
+# User Bonsai Platform configuration
+.bonsai
+
+# log files
+nohup.out
+
+# MATLAB folders created
+slprj/
+engineclosed_grt_rtw/
+
+# Simulink intermediate files
+*.slxc
+
+# AAD cache
+*.aadcache

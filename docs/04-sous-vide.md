@@ -1,0 +1,4 @@
+# (PART) Sous Video {-}
+
+- [You Can Cook Frozen Food Sous Vide Without Defrosting! Here’s How](https://www.chefsteps.com/activities/you-can-cook-frozen-food-sous-vide-without-defrosting-here-s-how)
+- [Sous Vide Cooking Times](https://www.chefsteps.com/activities/sous-vide-time-and-temperature-guide)

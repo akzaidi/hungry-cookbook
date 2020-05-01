@@ -1,0 +1,34 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: chapter
+  config:
+    theme: sandstone
+    fontsettings:
+      theme: white
+      family: serif
+      size: 2
+    download: [ ["Cookbook.pdf", "PDF"], ["Cookbook.epub", "EPUB"], ["Cookbook.docx", "Word"] ]
+    sharing:
+        facebook: no
+        twitter: yes
+        github: yes
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Cookbook</a></li>
+      after: |
+        <li><span style="font-size:8pt"><a href="https://github.com/akzaidi/" target="blank">Published by Ali Zaidi</a></span></li>
+bookdown::html_book:
+  css: toc.css
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+    before_body: before_body.tex
+    after_body: after_body.tex
+  keep_tex: true
+  latex_engine: xelatex
+  citation_package: natbib
+bookdown::epub_book:
+  stylesheet: style.css
+bookdown::word_document2:
+  toc: true
