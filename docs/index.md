@@ -2,7 +2,7 @@
 knit: "bookdown::render_book"
 title: "The Hungry Cookbook"
 author: "Ali Zaidi and Sampi Chan"
-date: "2020-04-30"
+date: "2020-05-02"
 twitter-handle: alikzaidi
 # cover-image: cover.png
 # documentclass: krantz
