@@ -1,4 +1,6 @@
-# (PART) Groceries {-}
+# (PART) Appendix {-}
+
+# Groceries
 
 ## 2020-05-02
 
