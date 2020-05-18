@@ -20,3 +20,4 @@ for (fmt in formats) {
   #   bookdown::calibre('docs/bookdown.epub', 'mobi')
 }
 unlink('bookdown.log')
+unlink(list.files('docs', '\\.md$', full.names = T))

@@ -6,6 +6,9 @@
 trigger:
 - master
 
+pool:
+  vmImage: 'Ubuntu-16.04'
+
 container:
   image: hungrycook.azurecr.io/cookbook:latest
   endpoint: hungrycook
