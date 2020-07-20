@@ -5,9 +5,11 @@ output_dir: docs
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
 delete_merged_file: yes
-rmd_files: 
-- index.Rmd
-- 02-chicken.Rmd
-- InstaPotChickenPho.md
-- 04-sous-vide.Rmd
-- 05-groceries.Rmd
+rmd_files:
+  - index.Rmd
+  - 02-chicken.Rmd
+  - InstaPotChickenPho.md
+  - ThaiBasilChicken.md
+  - 04-sous-vide.Rmd
+  - 05-groceries.Rmd
+  - SpicyCuminLambNoodles.md

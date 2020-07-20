@@ -1,22 +1,23 @@
-Thai Basil Chicken
+# Thai Basil Chicken
 
-Ingredients:
+## Ingredients:
 
-4 minced chicken thighs 
-half an onion or shallot thinly sliced
-2 red thai chilis sliced
-1 cup of green beans cut into little cubes
-3 cloves garlic minced 
-1 cup basil thinly sliced
+- 4 minced chicken thighs 
+- half an onion or shallot thinly sliced
+- 2 red thai chilis sliced
+- 1 cup of green beans cut into little cubes
+- 3 cloves garlic minced 
+- 1 cup basil thinly sliced
 
-For the sauce:
-1 cup chicken broth
-2 tablespoons hoisin sauce
-2 tablespoons soy sauce
-1/8 teaspoon red chilli powder
-2 - 3 teaspoons sugar
+### For the sauce:
 
-Direction:
+- 1 cup chicken broth
+- 2 tablespoons hoisin sauce
+- 2 tablespoons soy sauce
+- 1/8 teaspoon red chilli powder
+- 2 - 3 teaspoons sugar
+
+## Directions:
 
 1. Combine ingredients for the sauce into a bowl, then set aside
 2. Into a large skillet add 3 tablespoons olive oil, add chicken when skillet is hot and cook thouroughly 

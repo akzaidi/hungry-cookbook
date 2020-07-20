@@ -14,6 +14,9 @@ RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificate
 #     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
 #     echo "conda activate base" >> ~/.bashrc
 
+WORKDIR /cookbook/
+COPY install_pkgs.R /cookbook/install_pkgs.R
+
 # Install all TeX and LaTeX dependences
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends \
@@ -23,11 +26,12 @@ RUN apt-get update && \
     lmodern \
     make \
     texlive-fonts-recommended \
-    texlive-generic-recommended \
+    # texlive-generic-recommended \
     texlive-lang-english \
-    texlive-lang-portuguese \
+    # texlive-lang-portuguese \
     texlive-xetex && \
     apt-get autoclean && apt-get --purge --yes autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # RUN conda env update -f environment.yml
+RUN Rscript /cookbook/install_pkgs.R
