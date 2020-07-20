@@ -14,9 +14,6 @@ RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificate
 #     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
 #     echo "conda activate base" >> ~/.bashrc
 
-WORKDIR /cookbook/
-COPY . /cookbook/
-
 # Install all TeX and LaTeX dependences
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends \
@@ -34,4 +31,3 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # RUN conda env update -f environment.yml
-RUN Rscript install_pkgs.R
