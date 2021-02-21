@@ -1,5 +1,3 @@
-# (PART) Lamb Recipes {-}
-
 # Spicy Cumin Lamb Noodles
 
 Source: https://ladyandpups.com/2015/03/04/my-xian-famous-spicy-cumin-lamb-hand-smashed-noodles/.
