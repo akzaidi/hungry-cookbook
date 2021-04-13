@@ -1,44 +1,57 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{article}
+\documentclass[
+]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdftitle={The Hungry Cookbook},
-            pdfauthor={Ali Zaidi and Sampi Chan},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+  pdftitle={The Hungry Cookbook},
+  pdfauthor={Ali Zaidi and Sampi Chan},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1in]{geometry}
 \usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
-\usepackage{graphicx,grffile}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -47,25 +60,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
 \usepackage{booktabs}
 \usepackage{makeidx}
 \makeindex
@@ -74,7 +76,7 @@
 
 \title{The Hungry Cookbook}
 \author{Ali Zaidi and Sampi Chan}
-\date{2021-02-21}
+\date{2021-04-12}
 
 \begin{document}
 \maketitle
@@ -86,6 +88,7 @@ For the Hungry. \\
 By the Hungry.
 
 \end{center}
+
 
 {
 \setcounter{tocdepth}{2}
@@ -129,6 +132,82 @@ By the Hungry.
   1 lemon, juiced
 \end{itemize}
 
+\hypertarget{peri-peri-chicken-and-rice}{%
+\section{\texorpdfstring{\href{https://www.moribyan.com/recipe-view/peri-peri-style-chicken-and-rice/}{Peri Peri Chicken and Rice}}{Peri Peri Chicken and Rice}}\label{peri-peri-chicken-and-rice}}
+
+\hypertarget{ingredients}{%
+\subsection{Ingredients}\label{ingredients}}
+
+\begin{itemize}
+\tightlist
+\item
+  1.5 lbs chicken thighs, boneless and skinless
+\item
+  2 teaspoons chili powder
+\item
+  1 teaspoon garlic powder
+\item
+  1/2 teaspoon black pepper
+\item
+  1 teaspoon smoked paprika
+\item
+  1/2 teaspoon cumin
+\item
+  1 teaspoon salt
+\item
+  1 whole red bell pepper, chopped
+\item
+  1/2 yellow onion, chopped
+\item
+  2 teaspoons minced garlic
+\item
+  1 tablespoon olive oil
+\item
+  1 1/2 cup basmati rice
+\item
+  3 cups chicken stock
+\item
+  2 teaspoons chili powder
+\item
+  1 teaspoon paprika
+\item
+  1 teaspoon turmeric
+\item
+  1/2 teaspoon salt, more to taste
+\item
+  1/2 teaspoon oregano
+\item
+  red pepper chili flakes (optional)
+\item
+  1 tablespoon tomato paste
+\item
+  1 to 2 tablespoons unsalted butter
+\item
+  peri peri sauce
+\item
+  1 cup peas, cooked
+\item
+  1 to 2 tablespoons cilantro, chopped
+\end{itemize}
+
+\hypertarget{steps}{%
+\subsection{Steps}\label{steps}}
+
+\hypertarget{marinade-the-chicken}{%
+\subsubsection{Marinade The Chicken}\label{marinade-the-chicken}}
+
+Add the chili powder, garlic, black pepper, paprika, cumin, and salt to the chicken. Mix to evenly coat the chicken thighs.
+
+\hypertarget{cook-the-chicken}{%
+\subsubsection{Cook The Chicken}\label{cook-the-chicken}}
+
+Add 1 tablespoon of vegetable or olive oil to a pan over medium high heat. Add the chicken thighs and spread evenly apart. Allow it to sear on one side for 4-5 minutes until a nice golden brown crust forms. Flip over to the other side and repeat. Then drop the heat to low, brush the chicken thighs with peri peri sauce and let it cook for 3 more minutes. Take off the heat and you can brush again with more peri peri sauce.\footnote{I like to do this step right after I cover the rice to cook}
+
+\hypertarget{cook-the-rice}{%
+\subsubsection{Cook The Rice}\label{cook-the-rice}}
+
+Wash your rice really well until the water runs clear. In a large pan, add the olive oil over medium high heat. Add the red bell pepper, onion, and minced garlic. Saute for 3-4 minutes and then add in the chicken stock. Add chili powder, paprika, turmeric, salt, oregano, tomato paste, butter, and chili flakes. Once the stock is simmering, add the rice in. If it stops simmering, bring to a simmer again and then drop the heat. Cover and let it cook for about 18 minutes or until tender. Take off the heat, fluff with a fork, add the peas and chopped cilantro. Mix again. Top with the cooked chicken. Enjoy!
+
 \hypertarget{chicken-burgers}{%
 \section{\texorpdfstring{\href{https://www.foodnetwork.com/recipes/rachael-ray/bbq-chicken-burgers-with-slaw-recipe-1917239}{Chicken Burgers}}{Chicken Burgers}}\label{chicken-burgers}}
 
@@ -170,8 +249,8 @@ By the Hungry.
 \hypertarget{khanpunggi}{%
 \section{\texorpdfstring{\href{https://www.maangchi.com/recipe/kkanpunggi/comment-page-3}{Khanpunggi}}{Khanpunggi}}\label{khanpunggi}}
 
-\hypertarget{ingredients}{%
-\subsection{Ingredients}\label{ingredients}}
+\hypertarget{ingredients-1}{%
+\subsection{Ingredients}\label{ingredients-1}}
 
 \hypertarget{chicken}{%
 \subsubsection{Chicken:}\label{chicken}}
@@ -230,8 +309,8 @@ Oil:
 -\href{https://www.seriouseats.com/2013/08/the-food-lab-how-to-make-jerk-chicken-at-home.html}{\textbf{kenji's writedown}}
 -\href{https://www.youtube.com/watch?v=Rt460jKi4Bk}{Another} on by Kwame Onwuachi, recipe \href{https://www.vice.com/en_us/article/akw3bb/the-best-jerk-chicken-recipe}{here}
 
-\hypertarget{ingredients-1}{%
-\subsection{ingredients}\label{ingredients-1}}
+\hypertarget{ingredients-2}{%
+\subsection{ingredients}\label{ingredients-2}}
 
 \begin{itemize}
 \tightlist
@@ -487,8 +566,8 @@ INGREDIENTS
 \hypertarget{tandoor-chicken}{%
 \section{\texorpdfstring{\href{https://www.vahrehvah.com/tandoori-chicken}{Tandoor Chicken}}{Tandoor Chicken}}\label{tandoor-chicken}}
 
-\hypertarget{ingredients-2}{%
-\subsection{Ingredients}\label{ingredients-2}}
+\hypertarget{ingredients-3}{%
+\subsection{Ingredients}\label{ingredients-3}}
 
 \begin{itemize}
 \tightlist
@@ -576,8 +655,8 @@ INGREDIENTS
 \hypertarget{chicken-pho-pho-ga-in-instapot}{%
 \section{Chicken Pho (Pho Ga in InstaPot)}\label{chicken-pho-pho-ga-in-instapot}}
 
-\hypertarget{ingredients}{%
-\subsection{Ingredients:}\label{ingredients}}
+\hypertarget{ingredients-4}{%
+\subsection{Ingredients:}\label{ingredients-4}}
 
 \begin{itemize}
 \tightlist
@@ -658,8 +737,8 @@ INGREDIENTS
 \hypertarget{thai-basil-chicken}{%
 \section{Thai Basil Chicken}\label{thai-basil-chicken}}
 
-\hypertarget{ingredients}{%
-\subsection{Ingredients:}\label{ingredients}}
+\hypertarget{ingredients-5}{%
+\subsection{Ingredients:}\label{ingredients-5}}
 
 \begin{itemize}
 \tightlist
@@ -694,8 +773,8 @@ INGREDIENTS
   2 - 3 teaspoons sugar
 \end{itemize}
 
-\hypertarget{directions}{%
-\subsection{Directions:}\label{directions}}
+\hypertarget{directions-1}{%
+\subsection{Directions:}\label{directions-1}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -730,6 +809,20 @@ INGREDIENTS
 
 \hypertarget{lamb-nihari}{%
 \section{Lamb Nihari}\label{lamb-nihari}}
+
+\hypertarget{inspiration}{%
+\subsection{Inspiration}\label{inspiration}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \href{https://www.saveur.com/article/recipes/pakistani-slow-cooked-lamb-stew-dumbay-ki-nihari/}{Saveur: Pakistani Lamb Nihari Recipe}
+\item
+  \href{https://www.myketokitchen.com/keto-recipes/lamb-stew-pressure-cooker/}{Keto Kitchen: Lamb Stew Recipe}
+\item
+  \href{https://www.youtube.com/watch?v=axon9qBTmXc\&ab_channel=ChefRanveer}{Chef Ranveer: Lucknow Nihari}
+\end{enumerate}
 
 \hypertarget{garam-masala}{%
 \subsection{Garam Masala}\label{garam-masala}}
@@ -772,6 +865,8 @@ INGREDIENTS
 \item
   1 medium yellow onion, very thinly sliced
 \item
+  1-2 indian chili peppers thinly sliced (as needed)
+\item
   3 lamb shanks, halved crosswise or 1 pound of lamb loins
 \item
   1 tbsp. cayenne
@@ -785,6 +880,12 @@ INGREDIENTS
   1⁄4 cup flour
 \item
   2 tbsp. ghee, melted
+\item
+  3 stalks of rosemary
+\item
+  3 stalks of thyme
+\item
+  3 -4 tomatoes
 \item
   Chopped cilantro, lemon or lime wedges, minced Thai chiles, and naan bread, for serving (optional)
 \item
@@ -827,7 +928,11 @@ INGREDIENTS
     \item
       Stir in reserved garam masala, the cayenne pepper and paprika.
     \item
+      Add tomatoes and stir in spices into tomato mixture for about 3-4 minutes.
+    \item
       Add 3 cups chicken broth; boil.
+    \item
+      (Optional) Add 1/2 cup of red wine vinegar.
     \item
       Reduce heat to medium-low; cook, covered, until lamb has fallen off the bone, 5 1⁄2--6 hours, or 2-3 hours if boneless.
     \item
@@ -840,16 +945,13 @@ INGREDIENTS
   \end{enumerate}
 \end{enumerate}
 
-\hypertarget{part-lamb-recipes}{%
-\part{Lamb Recipes}\label{part-lamb-recipes}}
-
 \hypertarget{spicy-cumin-lamb-noodles}{%
 \section{Spicy Cumin Lamb Noodles}\label{spicy-cumin-lamb-noodles}}
 
 Source: \url{https://ladyandpups.com/2015/03/04/my-xian-famous-spicy-cumin-lamb-hand-smashed-noodles/}.
 
-\hypertarget{ingredients}{%
-\subsection{Ingredients}\label{ingredients}}
+\hypertarget{ingredients-6}{%
+\subsection{Ingredients}\label{ingredients-6}}
 
 \hypertarget{lamb-and-seasonings}{%
 \subsubsection{Lamb And Seasonings:}\label{lamb-and-seasonings}}
@@ -974,8 +1076,8 @@ Source: \url{https://ladyandpups.com/2015/03/04/my-xian-famous-spicy-cumin-lamb-
   126 grams (1/2 cup) water + 15 grams (1 tbsp) for adjustment
 \end{itemize}
 
-\hypertarget{recipe}{%
-\subsection{Recipe}\label{recipe}}
+\hypertarget{recipe-1}{%
+\subsection{Recipe}\label{recipe-1}}
 
 Toast the cumin seeds on a skillet over medium heat, stirring constantly, until they start to pop and smell fragrant. Immediately transfer to a stone-mortar or spice-grinder before they burn. Grind them into a consistency that resembles coarsely ground black pepper, then set aside.
 
@@ -995,7 +1097,7 @@ Add 4 tbsp of canola oil from ``Seasoning B'' to the same skillet until hot, the
 
 Serve immediately with chili oil, and I'd like to sprinkle a bit more ground cumin on top.
 
-\bibliography{book.bib}
+  \bibliography{book.bib}
 
 \printindex
 
