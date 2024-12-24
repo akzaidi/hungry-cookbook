@@ -125,12 +125,10 @@ Oil:
 
 # [Jerk Chicken](https://www.seriouseats.com/recipes/2013/08/jerk-chicken.html)
 
-## Overview
-
 <!-- - [**kenji's writedown**](https://www.seriouseats.com/2013/08/the-food-lab-how-to-make-jerk-chicken-at-home.html)
 - [Another](https://www.youtube.com/watch?v=Rt460jKi4Bk) on by Kwame Onwuachi, recipe [here](https://www.vice.com/en_us/article/akw3bb/the-best-jerk-chicken-recipe) -->
 
-### Brine
+## Brine
 
 - $\frac{1}{2}$ cup|75 grams kosher salt
 - $\frac{1}{4}$ cup|60 grams granulated sugar
@@ -144,7 +142,7 @@ Oil:
 
 Feel free to also add onion powder or even a halved onion.
 
-### Jerk Marinade
+## Jerk Marinade
 
 - 6 whole Scotch bonnet peppers
 - 6 scallions, roughly chopped
@@ -166,7 +164,7 @@ Feel free to also add onion powder or even a halved onion.
 - 4 - 8 dried bay leaves (about 2 loosely packed cups)
 - 1 large whole chicken, back removed, split in half along breastbone (4 to 4 1/2 pounds, see note)
 
-### Jerk BBQ Sauce
+## Jerk BBQ Sauce
 
 - 2 tablespoons vegetable oil
 - $\frac{1}{4}$ cup minced ginger
@@ -176,7 +174,7 @@ Feel free to also add onion powder or even a halved onion.
 - 1 ½ cups|300 grams dark brown sugar
 - 1 ¼ cups|300 grams jerk paste
 
-### Directions
+## Directions
 
 0. **For the Brine**: Combine salt, sugar, allspice, garlic, bay leaves, cloves, Scotch bonnet, and ginger in a large saucepan. Add 1 quart water and bring to a boil over high heat, stirring until salt and sugar are dissolved. Remove from heat and add 1 quart ice. Stir until ice is melted and brine is cold. Place chicken in a large zipper-lock bag and add brine. Seal bag, pressing out as much air as possible. Place in a bowl and refrigerate for at least 4 hours and up to 24.
 1. **For the Marinade**: Combine peppers, scallions, ginger, garlic, thyme, allspice, nutmeg, cinnamon, brown sugar, soy sauce, Worcestershire sauce, tamarind paste lime zest and juice, olive oil, 2 teaspoons black pepper, and 1 tablespoon kosher salt in the work bowl of a food processor or the jar of a blender. Blend until a rough puree is formed. Paste should be thick.
